@@ -1,0 +1,21 @@
+{
+    "name": "renatorib/ATM",
+    "description": "Printi ATM Test for PHP Developer",
+    "license": "MIT",
+    "keywords": ["printi", "atm"],
+    "authors": [
+        {
+            "name": "Renato Ribeiro",
+            "email": "renatoribroman@gmail.com"
+        }
+    ],
+    "require": {
+        "klein/klein": "*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "ATM\\": "src"
+        }
+    }
+}

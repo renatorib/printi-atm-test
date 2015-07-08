@@ -1,0 +1,73 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: "Open Sans", Arial;
+  -webkit-font-smoothing: antialiased; }
+
+header {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  color: #888888;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+main {
+  background: #eee;
+  text-align: center; }
+
+.input {
+  width: 100%; }
+  .input input {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: left; }
+  .input label {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    font-size: 10px;
+    color: #999;
+    text-align: left; }
+  .input button {
+    border: 0;
+    padding: 5px;
+    background: #fff;
+    color: black;
+    border-radius: 3px; }
+
+.calculate {
+  width: 180px;
+  margin: 100px auto; }
+  .calculate .input input {
+    font-size: 20px; }
+  .calculate .input button {
+    width: 100%;
+    background: #2ecc71;
+    color: white;
+    margin-top: 5px; }
+  .calculate .error, .calculate .note {
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px; }
+  .calculate .note {
+    background: #fff;
+    color: #666; }
+  .calculate .error {
+    background: #e74c3c;
+    color: #eee;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
