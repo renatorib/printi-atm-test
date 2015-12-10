@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '#optional', 'dev' ]
+2 info using npm@2.7.6
+3 info using node@v0.10.29
+4 verbose install initial load of /private/var/www/atm/package.json
+5 warn package.json atm@1.0.0 No description
+6 warn package.json atm@1.0.0 No repository field.
+7 warn package.json atm@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /private/var/www/atm/node_modules/grunt/package.json
+9 verbose installManyTop reading scoped package data from /private/var/www/atm/node_modules/grunt-contrib-sass/package.json
+10 verbose installManyTop reading scoped package data from /private/var/www/atm/node_modules/grunt-contrib-watch/package.json
+11 verbose readDependencies loading dependencies from /private/var/www/atm/package.json
+12 silly cache add args [ '#optional', null ]
+13 verbose cache add spec #optional
+14 silly cache add args [ 'dev', null ]
+15 verbose cache add spec dev
+16 silly cache add parsed spec { raw: '#optional',
+16 silly cache add   scope: null,
+16 silly cache add   name: null,
+16 silly cache add   rawSpec: '#optional',
+16 silly cache add   spec: '/private/var/www/atm/#optional',
+16 silly cache add   type: 'local' }
+17 silly cache add parsed spec { raw: 'dev',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'dev',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: '*',
+17 silly cache add   type: 'range' }
+18 silly addNamed dev@*
+19 verbose addNamed "*" is a valid semver range for dev
+20 silly addNameRange { name: 'dev', range: '*', hasData: false }
+21 silly mapToRegistry name dev
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/dev
+25 verbose addNameRange registry:https://registry.npmjs.org/dev not in flight; fetching
+26 error addLocal Could not install /private/var/www/atm/#optional
+27 verbose request uri https://registry.npmjs.org/dev
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 17:32:27
+30 verbose request id a70fe68e4e1b5e0b
+31 http request GET https://registry.npmjs.org/dev
+32 http 200 https://registry.npmjs.org/dev
+33 silly get cb [ 200,
+33 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 silly get     etag: '"6FAQ717WLWEEHPRF40N2OPADI"',
+33 silly get     'content-type': 'application/json',
+33 silly get     'cache-control': 'max-age=60',
+33 silly get     'content-length': '8751',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Wed, 08 Jul 2015 20:32:28 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     age: '0',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-jfk1031-JFK',
+33 silly get     'x-cache': 'MISS',
+33 silly get     'x-cache-hits': '0',
+33 silly get     'x-timer': 'S1436387548.886804,VS0,VE96',
+33 silly get     vary: 'Accept' } ]
+34 verbose get saving dev to /Users/renatoribeiro/.npm/registry.npmjs.org/dev/.cache.json
+35 silly addNameRange number 2 { name: 'dev', range: '*', hasData: true }
+36 silly addNameRange versions [ 'dev',
+36 silly addNameRange   [ '0.1.0',
+36 silly addNameRange     '0.1.1',
+36 silly addNameRange     '0.1.2',
+36 silly addNameRange     '0.1.3',
+36 silly addNameRange     '0.1.1-d',
+36 silly addNameRange     '0.1.1-e',
+36 silly addNameRange     '0.1.1-f',
+36 silly addNameRange     '0.1.1-g',
+36 silly addNameRange     '0.1.1-h',
+36 silly addNameRange     '0.1.1-n',
+36 silly addNameRange     '0.1.1-p' ] ]
+37 silly addNamed dev@0.1.3
+38 verbose addNamed "0.1.3" is a plain semver version for dev
+39 silly mapToRegistry name dev
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/dev
+43 verbose addRemoteTarball https://registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+44 verbose addRemoteTarball [ 'https://registry.npmjs.org/dev/-/dev-0.1.3.tgz',
+44 verbose addRemoteTarball   '89fdc08705e0e7eaef92d012e26751e4d744322a' ]
+45 info retry fetch attempt 1 at 17:32:29
+46 info attempt registry request try #1 at 17:32:29
+47 http fetch GET https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+48 http fetch 200 https://registry.npmjs.org/dev/-/dev-0.1.3.tgz
+49 silly fetchAndShaCheck shasum 89fdc08705e0e7eaef92d012e26751e4d744322a
+50 verbose addTmpTarball /var/folders/gg/6rnx1b_n0gn5mrlf4rt7d5440000gn/T/npm-14030-5149df0b/registry.npmjs.org/dev/-/dev-0.1.3.tgz not in flight; adding
+51 verbose addTmpTarball already have metadata; skipping unpack for dev@0.1.3
+52 silly cache afterAdd dev@0.1.3
+53 verbose afterAdd /Users/renatoribeiro/.npm/dev/0.1.3/package/package.json not in flight; writing
+54 verbose afterAdd /Users/renatoribeiro/.npm/dev/0.1.3/package/package.json written
+55 verbose stack Error: ENOENT, open '/private/var/www/atm/#optional'
+56 verbose cwd /private/var/www/atm
+57 error Darwin 14.0.0
+58 error argv "node" "/usr/local/bin/npm" "install" "#optional" "dev"
+59 error node v0.10.29
+60 error npm  v2.7.6
+61 error path /private/var/www/atm/#optional
+62 error code ENOENT
+63 error errno 34
+64 error enoent ENOENT, open '/private/var/www/atm/#optional'
+64 error enoent This is most likely not a problem with npm itself
+64 error enoent and is related to npm not being able to find a file.
+65 verbose exit [ 34, true ]
